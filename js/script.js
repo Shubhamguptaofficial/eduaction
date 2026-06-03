@@ -1,0 +1,16 @@
+
+window.addEventListener("scroll", function(){
+  let header = document.querySelector(".navbar");
+
+    header.classList.toggle("sticky", window.scrollY > 40);
+});
+
+
+
+let  accordion = document.getElementsByClassName('contentBox');
+
+for(i=0; i<accordion.length; i++){
+  accordion[i].addEventListener('click',function(){
+    this.classList.toggle('active');
+  })
+}
